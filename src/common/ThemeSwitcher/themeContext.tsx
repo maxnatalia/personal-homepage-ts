@@ -1,8 +1,7 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 type ThemeContextType = {
   isDarkTheme: boolean;
-  setIsDarkTheme: React.Dispatch<React.SetStateAction<boolean>>;
   toggleTheme: () => void;
 };
 
@@ -10,10 +9,22 @@ type ThemeProviderProps = {
   children: React.ReactNode;
 };
 
+const LOCAL_STORAGE_KEY = "theme";
+
+const getInitialTheme = () => {
+  const themeFromLocalStorage = localStorage.getItem(LOCAL_STORAGE_KEY);
+
+  return themeFromLocalStorage ? JSON.parse(themeFromLocalStorage) : false;
+};
+
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState<boolean>(getInitialTheme);
+
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(isDarkTheme));
+  }, [isDarkTheme]);
 
   const toggleTheme = () => {
     setIsDarkTheme(prevState => !prevState);
@@ -23,7 +34,6 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     <ThemeContext.Provider
       value={{
         isDarkTheme,
-        setIsDarkTheme,
         toggleTheme,
       }}
     >
