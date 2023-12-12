@@ -1,5 +1,6 @@
+import { Title } from "../Title";
 import { skillsData } from "./skillsData";
-import { Bullet, Section, SkillItem, SkillsList, Title } from "./styled";
+import { Bullet, Section, SkillItem, SkillsList } from "./styled";
 
 type SkillsListType = {
   title: string;
@@ -12,7 +13,7 @@ const Skills = () => {
     <>
       {skillsData.map(({ title, icon, list }: SkillsListType, index) => (
         <Section key={`${index} - ${title}`}>
-          <Title>
+          <Title $skills>
             {title} <img src={icon} alt={"icon"} />
           </Title>
           <SkillsList>
