@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.a`
+  margin-top: 32px;
   padding: 12px 16px;
   display: inline-flex;
   align-items: center;
