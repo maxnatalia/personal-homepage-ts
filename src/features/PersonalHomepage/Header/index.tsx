@@ -17,7 +17,7 @@ const Header = () => {
           👩‍🦰💻I’m an enthusiastic Frontend Developer in friendship with React,
           currently looking for new job opportunities and challenges.
         </Description>
-        <Button as="a" title={email} href={`mailto:${email}`}>
+        <Button title={email} href={`mailto:${email}`}>
           <EnvelopeIcon />
           hire me
         </Button>
