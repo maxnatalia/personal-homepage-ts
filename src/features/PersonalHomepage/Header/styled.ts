@@ -25,7 +25,7 @@ export const Name = styled.h1`
 `;
 
 export const Description = styled.p`
-  margin-bottom: 32px;
+  margin-bottom: 0;
   color: ${({ theme }) => theme.color.textSecondary};
   font-size: 20px;
   font-weight: 400;
