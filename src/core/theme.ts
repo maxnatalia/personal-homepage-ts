@@ -34,7 +34,6 @@ const breakpoint = {
 
 export const themeLight: DefaultTheme = {
   breakpoint,
-  shadows,
   color: {
     background: colorNames.whiteLilac,
     textPrimary: colorNames.semiBlack,
@@ -61,7 +60,6 @@ export const themeLight: DefaultTheme = {
 
 export const themeDark: DefaultTheme = {
   breakpoint,
-  shadows,
   color: {
     background: colorNames.semiBlack,
     textPrimary: colorNames.white,
