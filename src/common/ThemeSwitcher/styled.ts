@@ -13,6 +13,10 @@ export const ThemeText = styled.span`
   font-weight: 700;
   line-height: 130%;
   color: ${({ theme }) => theme.color.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    display: none;
+  }
 `;
 
 export const ThemeBox = styled.div`
