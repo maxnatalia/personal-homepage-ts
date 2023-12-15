@@ -25,4 +25,10 @@ export const Button = styled.a`
   &:active {
     box-shadow: ${({ theme }) => theme.color.buttonActive};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 24px;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 `;
