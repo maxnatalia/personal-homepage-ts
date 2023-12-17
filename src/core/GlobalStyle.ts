@@ -19,5 +19,9 @@ body {
   word-break: break-word;
   background: ${({ theme }) => theme.color.background};
   transition: all 0.3s ease;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+      font-size: 14px;
+  }
 }
 `;
