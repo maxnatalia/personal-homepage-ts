@@ -14,11 +14,19 @@ export const Title = styled.h2<TitleProps>`
   ${({ $skills }) =>
     $skills &&
     css`
-      display: flex;
-      gap: 16px;
       margin-top: 0;
       margin-bottom: 32px;
       padding-bottom: 16px;
       border-bottom: 1px solid ${({ theme }) => theme.color.divider};
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+      }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 `;
