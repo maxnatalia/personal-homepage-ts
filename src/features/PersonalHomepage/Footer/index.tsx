@@ -1,8 +1,12 @@
 import { email, gitHubLink, linkedInLink } from "../../utils";
 import { SpecialText } from "../SpecialText";
-import GitHubLogo from "./gitHub.svg?react";
-import LinkedInLogo from "./linkedIn.svg?react";
-import { LogoBox, StyledFooter, StyledLink } from "./styled";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  LogoBox,
+  StyledFooter,
+  StyledLink,
+} from "./styled";
 
 const Footer = () => {
   return (
@@ -24,7 +28,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHubLogo />
+          <GithubIcon />
         </StyledLink>
         <StyledLink
           title="LinkedIn"
@@ -32,7 +36,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInLogo />
+          <LinkedInIcon />
         </StyledLink>
       </LogoBox>
     </StyledFooter>
