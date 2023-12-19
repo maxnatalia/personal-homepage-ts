@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://maxnatalia.github.io/personal-homepage-ts",
+  "homepage": "https://maxnatalia.github.io/personal-homepage-ts/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
