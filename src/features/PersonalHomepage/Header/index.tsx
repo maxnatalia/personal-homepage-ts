@@ -2,9 +2,15 @@ import ThemeSwitcher from "../../../common/ThemeSwitcher";
 import { email } from "../../utils";
 import { Button } from "../Button";
 import { SpecialText } from "../SpecialText";
-import EnvelopeIcon from "./message.svg?react";
 import avatar from "./avatar.jpg";
-import { Description, Image, Name, StyledHeader, ThemeBox } from "./styled";
+import {
+  Description,
+  EnvelopeIcon,
+  Image,
+  Name,
+  StyledHeader,
+  ThemeBox,
+} from "./styled";
 
 const Header = () => {
   return (
