@@ -3,6 +3,10 @@ import GitHubIcon from "./gitHub.svg?react";
 
 export const Section = styled.section`
   margin: 72px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 24px 0;
+  }
 `;
 
 export const Wrapper = styled.div`
