@@ -14,6 +14,8 @@ export const Title = styled.h2<TitleProps>`
   ${({ $skills }) =>
     $skills &&
     css`
+      display: flex;
+      align-items: center;
       margin-top: 0;
       margin-bottom: 32px;
       padding-bottom: 16px;
