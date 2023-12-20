@@ -17,6 +17,7 @@ export const Section = styled.section`
 `;
 
 export const ImageIcon = styled.img`
+  margin: 8px;
   width: 26px;
   height: 32px;
   object-fit: cover;
