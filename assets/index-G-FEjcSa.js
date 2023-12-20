@@ -281,6 +281,8 @@ body {
   font-weight: 900;
 
   ${({$skills:e})=>e&&gn`
+      display: flex;
+      align-items: center;
       margin-top: 0;
       margin-bottom: 32px;
       padding-bottom: 16px;
@@ -462,6 +464,7 @@ body {
     padding: 16px;
   }
 `,iv=L.img`
+  margin: 8px;
   width: 26px;
   height: 32px;
   object-fit: cover;
